@@ -30,11 +30,11 @@ class Owner
   end
 
   def buy_cat(cats)
-    Cat.new(cats, self)
+    Cat.new(cats = cats.owner) 
   end
 
   def buy_dog(dogs)
-    Dog.new(dogs, self)
+    Dog.new(dogs, self) 
   end
 
   def walk_dogs
@@ -82,7 +82,7 @@ class Owner
   def sell_pets
     cats.select { |cats| cats.mood = "nervous" }
     dogs.select { |dogs| dogs.mood = "nervous" }
-
+    
   end
 
   def list_pets
