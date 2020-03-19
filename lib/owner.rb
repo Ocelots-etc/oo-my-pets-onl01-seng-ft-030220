@@ -88,8 +88,6 @@ class Owner
   def list_pets
     num_cats = cats.size
     num_dogs = dogs.size
-    binding.pry
-
     "I have #{dogs.owner.length} dog(s), and #{cats.owner.length} cat(s)."
   end
 
