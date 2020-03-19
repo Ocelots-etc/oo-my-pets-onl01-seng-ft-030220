@@ -22,13 +22,13 @@ class Owner
     return "I am a #{@species}."
   end
 
-  def cats     
+  def cats
     Cat.all.select { |cats| cats.owner == self }
     @cats = Cat.all.select { |cats| cats.owner == self }
     @@pets << cats
   end
 
-  def dogs     
+  def dogs
     Dog.all.select { |dogs| dogs.owner == self }
   end
 
