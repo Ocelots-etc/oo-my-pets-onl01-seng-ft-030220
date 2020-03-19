@@ -86,6 +86,8 @@ class Owner
   end
 
   def list_pets
+    num_cats = cats.owner
+    num_dogs = dogs.owner
     "I have #{dogs.owner.length} dog(s), and #{cats.owner.length} cat(s)."
   end
 
