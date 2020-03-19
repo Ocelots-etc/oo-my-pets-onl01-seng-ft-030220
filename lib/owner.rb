@@ -71,10 +71,6 @@ class Owner
   end
 
   def buy_dog(dogs)
-    dogs = 0
-    until dogs = 3
-    dogs += 1
-    end
     Dog.all.select { |dogs| owner.dogs }
   end
 
