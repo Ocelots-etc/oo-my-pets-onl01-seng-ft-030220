@@ -82,15 +82,16 @@ class Owner
   def sell_pets
     cats.select { |cats| cats.mood = "nervous" }
     dogs.select { |dogs| dogs.mood = "nervous" }
+
   end
 
   def list_pets
     "I have #{dogs.owner.length} dog(s), and #{cats.owner.length} cat(s)."
   end
 
-    def self.all
-      @@all
-    end
+  def self.all
+    @@all
+  end
 
 
     def self.count
