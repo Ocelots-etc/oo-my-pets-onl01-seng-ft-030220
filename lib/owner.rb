@@ -68,7 +68,7 @@ class Owner
   end
 
   def buy_dog(dogs)
-    Dog.all.select { |dogs| owner.dogs }
+    Dog.new(cats, self)
   end
 
   def walk_dogs
