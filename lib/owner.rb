@@ -64,10 +64,7 @@ class Owner
   end
 
   def buy_cat(owner, cats)
-    @cats = 0
-    @cats += 1
-    self.cats << cats.owner
-    buy_cat
+    Cat.all.select { |dogs| owner.dogs }
   end
 
   def buy_dog(dogs)
