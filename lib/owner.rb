@@ -88,7 +88,7 @@ class Owner
   def list_pets
     num_cats = cats.size
     num_dogs = dogs.size
-    "I have #{dogs.owner.length} dog(s), and #{cats.owner.length} cat(s)."
+    "I have #{num_dogs} dog(s), and #{cats.owner.length} cat(s)."
   end
 
   def self.all
