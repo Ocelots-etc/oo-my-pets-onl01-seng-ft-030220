@@ -85,7 +85,7 @@ class Owner
 
   end
 
-  def list_pets(owner)
+  def list_pets
     num_cats = cats.owner
     num_dogs = dogs.owner
     binding.pry
