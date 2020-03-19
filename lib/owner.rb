@@ -80,9 +80,13 @@ class Owner
   end
 
   def sell_pets
-    cats.select { |cats| cats.mood = "nervous" }
-    dogs.select { |dogs| dogs.mood = "nervous" }
-
+    cats.each do |cats| 
+      cats.mood = "nervous" 
+      cats = nil
+    dogs.each do |dogs| 
+      dogs.mood = "nervous" 
+      dogs = nil
+    
   end
 
   def list_pets
