@@ -82,9 +82,6 @@ class Owner
   def sell_pets
     cats.select { |cats| cats.mood = "nervous" }
     dogs.select { |dogs| dogs.mood = "nervous" }
-    if dogs.nil?
-    self.cats.garbage_collect
-    end
   end
 
   def list_pets
