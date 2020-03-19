@@ -3,7 +3,6 @@ require 'pry'
 class Owner
 
   @@all = []
-  @@pets = []
 
   attr_accessor :pets, :cats, :owner, :mood, :count, :dogs
   attr_reader :species, :name
@@ -24,8 +23,6 @@ class Owner
 
   def cats
     Cat.all.select { |cats| cats.owner == self }
-    @cats = Cat.all.select { |cats| cats.owner == self }
-    @@pets << cats
   end
 
   def dogs
